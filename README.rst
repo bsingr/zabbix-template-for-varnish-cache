@@ -2,7 +2,7 @@
 
 1. Copy ``zabbix-varnish-cache.py`` to ``/usr/local/bin/``.
 
-1.1 Make it executable.
+  - Make it executable.
 
 2. If using Varnish Cache >= 4.1, add ``zabbix`` user to the ``varnish`` group::
 
@@ -16,7 +16,7 @@
 
     * * * * * /usr/local/bin/zabbix-varnish-cache.py -i '' send -c /etc/zabbix/zabbix_agentd.conf -s dev > /dev/null 2>&1
     
-4.1 Make sure zabbix sender is installed `apt-get install zabbix-sender`
+  -  Make sure zabbix sender is installed `apt-get install zabbix-sender`
 
 5. Import the Varnish Cache template (``template-app-varnish.xml`` file).
 
